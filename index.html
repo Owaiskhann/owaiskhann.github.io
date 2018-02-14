@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style>
+   .pen
+   {
+    background: radial-gradient(green, red, blue);        height: 150px;
+    width: 150px;
+    margin-top: 110px;
+    margin-left: 110px;
+            transition-duration: 1s;
+
+   }
+   .tanol
+   {
+     background-color: blue;
+    height: 150px;
+    width: 150px;
+    margin-top: -50px;
+    margin-left: 130px;
+           transition-duration: 1s;
+}
+
+  .tanol:hover
+  {
+    z-index: 3;
+            transition-duration: 1s;        transform: rotate(140deg);
+
+
+  }
+  
+  .pen:hover
+  {
+    z-index: 1;
+       background: radial-gradient(green,green,grey);
+        transform: rotate(140deg);
+        transition-duration: 1s;
+
+  }
+
+  .back
+  {
+    height: 160px;
+    width: 160px;
+    background:url("gradient_8.png");
+   background-repeat: no-repeat;
+  }
+  </style>
+</head>
+<body  bgcolor="LightGrey">
+ 
+  <div class="pen"></div>
+  <div class="tanol"></div>
+  <div class="back"></div>
+
+
+</body>
+</html>
