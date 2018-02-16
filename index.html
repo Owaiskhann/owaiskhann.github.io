@@ -4,58 +4,62 @@
 	<title>Home</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<style>
-   .pen
-   {
-    background: radial-gradient(green, red, blue);        height: 150px;
-    width: 150px;
-    margin-top: 110px;
-    margin-left: 110px;
-            transition-duration: 1s;
-
-   }
-   .tanol
-   {
-     background-color: blue;
-    height: 150px;
-    width: 150px;
-    margin-top: -50px;
-    margin-left: 130px;
-           transition-duration: 1s;
-}
-
-  .tanol:hover
-  {
-    z-index: 3;
-            transition-duration: 1s;        transform: rotate(140deg);
-
-
-  }
-  
-  .pen:hover
-  {
-    z-index: 1;
-       background: radial-gradient(green,green,grey);
-        transform: rotate(140deg);
-        transition-duration: 1s;
-
-  }
-
-  .back
-  {
-    height: 160px;
-    width: 160px;
-    background:url("gradient_8.png");
-   background-repeat: no-repeat;
-  }
-  </style>
+	<link rel="stylesheet" type="text/css" href="css/sty.css">
 </head>
 <body  bgcolor="LightGrey">
- 
-  <div class="pen"></div>
-  <div class="tanol"></div>
-  <div class="back"></div>
+  <div class="back fns">
+	<div class="ffnt" >
 
-
+<form>
+<div class="topnav" id="myTopnav">
+  How <span style="color: white;"> Tech</span> Works &nbsp;&nbsp;<span style="background-color:; padding: 0px 0px; "> 
+  <input type="Search" name="Search" placeholder="  Search..."><a href=# class="active">Search</a>
+  <a href="1.html">Home</a>
+  <a href="Forum.html">Forum</a>
+  <a href="Technews.html">Tech News</a>
+  <a href="Aboutus.html">About Us</a>
+  <a href="Signin.html">Sign In</a>
+  <a href="Joinus.html">Join Us</a>
+    <a href="javascript:void(0);" style="font-size:15px; width: 20px;
+    height: 20px;
+  }" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+</form>
+</span>
+</div>
+<br>
+<br>
+<br>
+<br>
+  <div class="timeline fns">
+<h1> Want To Know How Tech Works?</h1>
+<h2>Then You Are In Right Place</h2>
+<div class="img1"></div>
+  <b>Here You Get:</b>
+  <ul >
+    <li>Latest Tech News.&ensp;&ensp;&ensp;&ensp;<!--<span><img src="Images/Tech.png" height="300px" width="400px" align="Right" alt="Nahi Mili" style="background-color: red"></span>--></li>
+    <li>How Technology Stuff Works.</li>
+    <li>Smartphone Information </li> 
+    <li>Forum To Help You</li>
+    <li>You Can Join</li>
+  </ul>
+</div>
+<div class="heyw"></div>
+<div>
+  <br>
+  <a href="Aboutus.html" title="Know About Us Here"> About Us</a>
+  <a href="Contactus.html" title="Contact Us Here"> Contact Us</a>
+</div>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </body>
 </html>
