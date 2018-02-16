@@ -1,0 +1,438 @@
+.ffnt
+{
+  background:linear-gradient(to right bottom,#2E00FF,#6796E5);
+  width: 100%;
+  overflow: hidden;
+  top:0;
+  display: block;
+  padding: auto;
+  padding: 10px;
+  height: auto;
+  border-bottom: 2px solid #fff;
+  position: fixed;padding: auto;
+  left:0;
+
+
+}
+
+/*.timeline
+{
+  creamy #FFE893;
+  greenish black #01282A
+
+}
+*/
+
+.timeline
+
+{
+  color:#01282A;
+  text-align: justify;
+  box-shadow:0px 0px 4px 4px darkgrey;
+  width: auto;
+  background-color: #FFE893;
+  border: 4px black;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -85px;
+  height: auto;
+  text-align: justify;
+  align-items: center;
+  font-size: 1.5em;
+  padding-bottom: 0.232px;
+  min-width: 100px;
+}
+
+h1,h2,b
+{
+  padding:8px;
+ }
+
+ .fns
+ {
+  font-family: 'ABeeZee';
+}
+
+.img1
+{
+background: url("Images/iStock_000005414770Medium1.jpg");
+background-size: 200px 170px;
+border: 2px solid black;
+height:170px;
+width: 200px;
+margin-right: 5px;
+float: right;
+}
+
+.back
+{
+  background-color: lightgrey;
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
+  margin-bottom:100px;
+}
+
+/*.heyw
+{
+  background: url("Images/iStock_000005414770Medium1.jpg");
+  float: right;
+  width: 350px;
+  height: 235px;
+  margin-top: -250px;
+  margin-right: -410px;
+  box-shadow: 0px 0px 8px 5px darkgrey;
+   background-repeat: no-repeat;
+    background-size: 350px 235px;
+
+
+}
+
+.heyw:hover
+{
+   background: url("Images/iStock_000005414770Medium1.jpg");
+);
+  box-shadow: inset 0px -45px 69px 5px black;
+     background-repeat: no-repeat;
+    background-size: 350px 235px;
+   transition-duration: 1s;
+}
+*/
+body
+{
+   background:linear-gradient(to bottom right,#002180,#14D5CB);
+   height: 100%;
+    margin: 0;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a,a
+{
+font-family:Raleway; 
+font-size: .80em;
+  border: 2px solid white;
+  padding: 5px 7px;
+  width: 100px;
+  height: 30px;
+  box-shadow: 3px 3px 3px grey;
+  color:white;
+  max-width:100%;height:auto;
+   max-width: 100%;
+  margin-left: 2px;
+  position:inherit;
+  text-align: center;
+  background-color: white;
+   background: linear-gradient(to bottom right,blue,#043f40);
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  
+}
+a:active
+{
+  box-shadow: 1px 1px 1px grey;
+  border-color: darkgrey;
+}
+a:hover
+{
+  
+  background-color:transparent;
+  border: 2px solid white;
+  color: white;
+  box-shadow:0px 0px 3px 3px white;
+}
+a:hover
+{
+  background: url("Images/spots_background_light_blur_68629_1920x1080.jpg");
+  color: white;
+}
+a:link
+{
+  text-decoration: none;
+  color: white;
+  text-decoration-color: white;
+  color:white;
+  color
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+input[type="search"]
+{
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  border-radius: 22px;
+  color:white;
+  outline: none;
+  width:259px;
+  height: 36px;
+  max-width: 100%;
+  box-shadow:inset 0px 0px 2px 2px grey;
+  margin-right: 10px;
+
+  
+}
+
+input.placeholder
+{
+  color:red;
+}
+
+.kik
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+text-align: center;
+padding-top:12%;
+}
+.kik2
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+text-align: center;
+padding-top:12%;
+}
+/*input[type="submit"],input[type="text"],input[type["password"]*/
+.form
+{
+  box-shadow: 1px 1px 19px #d5d5d5;
+  width:400px;
+  height: 300px;
+padding-top:80px;
+  background:linear-gradient(to right bottom,#07878F,#009EEE,#2400EE);
+}
+.form2
+{
+  box-shadow: 1px 1px 19px #d5d5d5;
+  width:400px;
+  height: 250px;
+padding-top:100px;
+  background:linear-gradient(to right bottom,#07878F,#009EEE,#2400EE);
+}
+.form:hover,.form2:hover
+{
+  box-shadow: 1px 1px 29px #d5d5d5;
+}
+
+input[type="text"]
+{
+  padding-top: 10px;
+  width: 200px;
+  color:white;
+border: none;
+border-bottom: 2px solid white;
+ outline: none;
+ box-shadow: none;
+ background: transparent;
+
+
+  }
+  input[list]
+  {
+ padding-top: 10px;
+  width: 200px;
+  color:white;
+border: none;
+border-bottom: 2px solid white;
+ outline: none;
+ box-shadow: none;
+ background: transparent;
+
+
+  }
+
+  input[type="password"]
+  {
+ padding-top: 10px;
+  width: 200px;
+  color:white;
+border: none;
+border-bottom: 2px solid white;
+ outline: none;
+ box-shadow: none;
+ background: transparent;
+
+
+  }
+  input[type="email"]
+  {
+ padding-top: 10px;
+  width: 200px;
+  color:white;
+border: none;
+border-bottom: 2px solid white;
+ outline: none;
+ box-shadow: none;
+ background: transparent;
+
+
+  }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;/* Firefox */
+}
+
+option
+{
+  
+}
+
+input[type="submit"]
+{
+  width: 230px;
+  height: 40px;
+  position: relative;
+  top:10px;
+  box-shadow:inset grey;
+  background:linear-gradient(to bottom right,blue,black);
+  border-radius: 8px;
+  border: 2px solid white;box-shadow: 1px 1px 19px #d5d5d5;
+  color: white;
+}
+input[type="submit"]:hover
+{
+   width: 230px;
+  height: 40px;
+  box-shadow: 3px 3px 3px grey;
+  background:#240368;
+  border-radius: 8px;
+ box-shadow:0px 0px 4px 3px #d5d5d5;
+  color: white;
+}
+
+a:active,input[type="button"]:active
+{
+  box-shadow: 1px 1px 1px grey;
+  border-color: darkgrey;
+}
+.topnav a:hover,input[type="button"]:hover
+{
+  
+  background:transparent;
+  border: 2px solid green;
+  color: white;
+}
+
+.active
+{
+
+  background-color: #4CAF50;
+  color:white;
+}
+.topnav .icon
+{
+  display: none;
+  
+
+}
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child) {display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: inherit;
+   margin-right: 14px;
+   margin-top: 2px;
+   .font-style: normal;
+   }
+   .fns{
+    font-family: 'ABeeZee';
+   }
+   .back
+   {
+
+   }
+  .timeline
+  {}
+}
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 14px;
+
+  }
+
+  .topnav.responsive a {
+   
+    display: block;
+    width:inherit;
+  text-align: center;
+  margin-right: 14px;
+  }
+
+}
+/* bengali */
+@font-face {
+  font-family: 'Atma';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Atma Regular'), local('Atma-Regular'), url(https://fonts.gstatic.com/s/atma/v3/tUcVDHNCVY7oFp6g2zLOiQ.woff2) format('woff2');
+  unicode-range: U+0964-0965, U+0981-09FB, U+200B-200D, U+20B9, U+25CC;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Atma';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Atma Regular'), local('Atma-Regular'), url(https://fonts.gstatic.com/s/atma/v3/PbvYsXTFQ_MNc2ljvem-3g.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atma';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Atma Regular'), local('Atma-Regular'), url(https://fonts.gstatic.com/s/atma/v3/h3A1dHyu7MD1UIhUXOiGCQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('ABeeZee Regular'), local('ABeeZee-Regular'), url(https://fonts.gstatic.com/s/abeezee/v11/TV7JXr7j4tW7mgYreANhGQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+.wen
+{
+  border-color: red;
+  box-shadow: none;
+  border-right-color:red;
+  border:20px solid red;
+  color: white;
+  background: url("Images/SplitShire-03692-1800x1200.jpg");
+}
+
+.wen2
+{
+  height: 500px;
+  width: 500px;
+   border-color: red;
+  box-shadow: none;
+
+  border-right-color:red;
+  color: white;
+  background: url("Images/next_tech_wallpaper_by_roxas_76927-d7ri2xz.jpg");
+}
+}
