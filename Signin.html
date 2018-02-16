@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" type="text/css" href="sty.css">
+</head>
+<body bgcolor="Lightgrey">
+ <div class="ffnt" >
+
+<form>
+<div class="topnav" id="myTopnav">
+  How <span style="color: white;"> Tech</span> Works &nbsp;&nbsp;<span style="background-color:; padding: 0px 0px; "> 
+  <input type="Search" name="Search" placeholder="  Search..."><a href=# class="active">Search</a>
+  <a href="1.html">Home</a>
+  <a href="Forum.html">Forum</a>
+  <a href="Technews.html">Tech News</a>
+  <a href="Aboutus.html">About Us</a>
+  <a href="Signin.html">Sign In</a>
+  <a href="Joinus.html">Join Us</a>
+    <a href="javascript:void(0);" style="font-size:15px; width: 20px;
+    height: 20px;
+  }" class="icon" onclick="myFunction()">&#9776;</a>
+  
+  </div>
+</form>
+</span>
+</div>
+<br><br><br><br>
+<center><div class="kik2">
+<form class="form2"  action="#">
+  <input type="text" name="username" id="gh" placeholder="Username"><br><br>
+  <input type="password" name="password" id="gh2" placeholder="Password"><br><br>
+  <input type="submit" name="signin" value="Sign In">
+</form>
+</div>
+<br>
+<div>
+  <a href="Aboutus.html" title="Know About Us Here"> About Us</a>
+  <a href="Contactus.html" title="Contact Us Here"> Contact Us</a>
+
+</div></center>
+<a href="javascript:void(0);" id="heyy" onclick="f11()">Hey!</a>
+<div id="loii" style="margin-left:100px;"></div>
+<script>
+  var c=1;
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+function f11()
+{
+  var web=c;
+  
+  while(web>0)
+ {   
+  if(c%2==0)
+  {
+  document.getElementById("loii").innerHTML="hwasjkghwjkafbfkjbadjkcvdcadcvhnjkdcn<br>ghafdhahffaev";
+  }
+  else
+  {
+    document.getElementById("loii").innerHTML="";
+  }
+  web--;
+}
+ c++;
+}
+</script>
+</body>
+</html>

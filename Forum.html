@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Forum</title>
+  <link rel="stylesheet" type="text/css" href="sty.css">
+</head>
+<body>
+  <div class="ffnt" >
+
+<form>
+<div class="topnav" id="myTopnav">
+  How <span style="color: white;"> Tech</span> Works &nbsp;&nbsp;<span style="background-color:; padding: 0px 0px; "> 
+  <input type="Search" name="Search" placeholder="  Search..."><a href=# class="active">Search</a>
+  <a href="1.html">Home</a>
+  <a href="Forum.html">Forum</a>
+  <a href="Technews.html">Tech News</a>
+  <a href="Aboutus.html">About Us</a>
+  <a href="Signin.html">Sign In</a>
+  <a href="Joinus.html">Join Us</a>
+    <a href="javascript:void(0);" style="font-size:15px; width: 20px;
+    height: 20px;
+  }" class="icon" onclick="myFunction()">&#9776;</a>
+  
+  </div>
+</form>
+</span>
+</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1><font color="white">
+    Select You Device:
+  </font>
+  </h1>
+  <form action="#">
+  <input list="smarthphone" placeholder="Select">
+  <datalist id="smarthphone">
+    <option value="Redmi 2"></option>
+    <option value="Redmi 2 Prime"></option>
+    <option value="Redmi 3"></option>
+    <option value="Redmi 3 Prime"></option>
+    <option value="Redmi 3s"></option>
+    <option value="Redmi 3s Prime"></option>
+    <option value="Redmi 4"></option>
+    <option value="Redmi 4A"></option>
+    <option value="Redmi Note 3"></option>
+    <option value="Redmi Note 4"></option>
+    <option value="Mi A1"></option>
+  </datalist>
+  <input list="variant" placeholder="Select">
+  <datalist id="variant">
+    <option value="2gb"></option>
+    <option value="3gb"></option>
+    <option value="4gb"></option>
+  </datalist>
+  
+<input type="submit" id="smarthphone" value="Go">
+</form>
+</div>
+<br><br>
+<div>
+  <a href="Aboutus.html" title="Know About Us Here"> About Us</a>
+  <a href="Contactus.html" title="Contact Us Here"> Contact Us</a>
+
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>
