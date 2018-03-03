@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog</title>
+<style type="text/css">
+*{
+	box-sizing: border-box;
+}
+	.navbar
+	{
+	
+		background-color: #1a4a2a;
+		position: fixed;
+		overflow: hidden;
+		margin-right: -2px;
+		margin-left: -10px;
+		top:0;
+		height: 70px;
+		width: 100%;
+		border: 1px solid grey;
+		box-shadow: 1px 2px 4px 1px grey;
+
+	}
+	.block
+	{
+		
+		
+		height: 600px;
+		width: 100%;
+		background: linear-gradient(to right bottom,#039e8d,#032253);
+		margin-top: 100px;
+		border: 1px solid grey;
+		box-shadow: 1px 2px 4px 1px grey;
+
+	}
+	.blockgrid
+	{
+		
+		display: grid;
+		grid-template-columns: auto auto auto auto auto auto;
+		grid-gap: 5px;
+		height: 600px;
+		width: 100%;
+		background-color: white;
+		margin-top: 100px;
+		border: 1px solid grey;
+		box-shadow: 1px 2px 4px 1px grey;
+
+	}
+.block2grid
+	{
+		
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 10px;
+		height: 600px;
+		width: 100%;
+				background: linear-gradient(to right bottom,#039e8d,#032253);
+
+		margin-top: 10px;
+				border: 1px solid grey;
+	
+		box-shadow: 1px 2px 4px 1px grey;
+
+	}
+	.blockgrid > div
+	{
+		 background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  		box-shadow: 1px 2px 4px 1px grey; 
+  		transition-duration: .3s;
+	}
+	.item:hover
+	{	transform: scale(1.07);
+		transition-duration: .3s;
+		background-color: white;
+  		box-shadow: 1px 4px 4px 1px grey; 
+	}
+	[class*="item"]:hover {
+    transform: scale(1.07);
+		transition-duration: .3s;
+		background-color: white;
+  		box-shadow: 1px 6px 18px 1px grey; 
+	}
+	.item3
+	{
+		grid-column: 3 / span 2;
+		grid-row: 1 ;
+		background: url("art23.jpeg");
+		background-size: cover;
+	}
+	.item2
+	{
+		grid-column: 2 / span 2;
+		grid-row: 3 ;
+		background: url("art16.jpeg");
+		background-size: cover;
+	}
+	.item1
+	{
+		grid-row:2/ span 2;
+		grid-column: 6;
+		background: url("art20.jpeg");
+		background-size: cover;
+	}
+	.item4
+	{
+		background: url("art21.jpeg");
+		background-size: cover;
+	}
+	.item5{
+		background: url("art12.jpg");
+		background-size: cover;
+	}
+	.item8
+	{
+		background: url("art13.jpeg");
+		background-size: cover;
+	}
+	.item9
+	{
+		background: url("art14.jpg");
+		background-size: cover;
+	}
+	.item10
+	{
+		background: url("art15.jpeg");
+		background-size: cover;
+	}
+	.item13
+	{
+		background: url("art24.jpeg");
+		background-size: cover;
+	}
+	.item16{
+	background: url("art22.jpeg");
+		background-size: cover;
+	}
+	.item17{
+	background: url("art18.jpg");
+		background-size: cover;
+	}
+	.item18{
+	background: url("art11.jpg");
+		background-size: cover;
+	}
+
+	.item11{
+	background: url("art22.jpeg");
+		background-size: cover;
+	}
+	.item12{
+	background: url("art11.jpg");
+		background-size: cover;
+	}
+	
+	.item14{
+	background: url("art4.jpg");
+		background-size: cover;
+	}
+
+	.item15{
+	background: url("art10.jpg");
+		background-size: cover;
+	}
+	.item19{
+	background: url("art2.jpg");
+		background-size: cover;
+	}
+
+	.item20{
+	background: url("art6.jpg");
+		background-size: cover;
+	}
+	.item21{
+	background: url("art5.jpg");
+		background-size: cover;
+	}
+	.item6{
+	background: url("art1.png");
+		background-size: cover;
+	}
+	.item7{
+	background: url("art5.jpg");
+		background-size: cover;
+	}
+	.blockp1
+	{
+		background-color: #b2f2ef;
+		float: right;
+		font-size: 26px;
+		max-height: 68%;
+		
+		overflow: scroll;
+		width:54%;
+		padding: 5px;
+		margin-top: 10px;
+		margin-right: 20px;
+		box-shadow: 1px 2px 4px 1px grey; 
+		scroll-behavior: unset;
+
+	}
+	.blockimg1
+	{
+		box-shadow: 1px 2px 4px 1px grey;
+		margin-left: 20px;
+		margin-top: 10px;
+		width: 33%;
+		float: left;
+		transition-duration: .61s;
+
+		
+		
+	}
+	.blockimg1:hover,.blockimg2:hover
+	{
+		transform: scale(1.17) translate(10px);
+		transition-duration: .71s;
+	}
+	.blockp2
+	{
+		background-color: #b2f2ef;
+		float: right;
+		font-size: 26px;
+		max-height: 68%;
+		
+		overflow: scroll;
+		width:54%;
+		padding: 5px;
+		margin-top: 10px;
+		margin-right: 20px;
+		box-shadow: 1px 2px 4px 1px grey; 
+
+	}
+	.blockimg2
+	{
+		box-shadow: 1px 2px 4px 1px grey;
+		width: 29%;
+		float: left;
+		margin-left: 20px;
+		margin-top: 20px;
+		transition-duration: .61s;
+		background-size: contain;
+
+		
+	}
+	.blockp3
+	{
+		
+		
+		background-color: #b2f2ef;
+		float: right;
+		font-size: 26px;
+		max-height: 68%;
+		
+		overflow: scroll;
+		width:54%;
+		padding: 5px;
+		margin-top: 10px;
+		margin-right: 20px;
+		box-shadow: 1px 2px 4px 1px grey; 
+
+	}
+	.blockdiv1
+	{
+		text-align: left;
+		margin-top: 12px;
+		margin-left: 20px;
+		margin-right: 20px;
+		padding-left: 10px;
+		font-size: 40px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: #372f2f;
+		background-color: lightgrey;
+		box-shadow: 1px 2px 4px 1px grey;
+		transition-duration: 0.71s;
+
+
+	}
+	.blockdiv1:hover
+	{
+		background-color:#0d2e28;
+		color: white;
+		transition-duration: 0.81s;
+	}
+	
+	
+	.block2
+	{
+		
+		height: 600px;
+		width: 100%;
+				background: linear-gradient(to right bottom,#039e8d,#032253);
+
+		margin-top: 10px;
+				border: 1px solid grey;
+	
+		box-shadow: 1px 2px 4px 1px grey;
+	}
+	.class4
+	{
+			
+
+		height: 600px;
+		width: 100%;
+		background-color: lightgrey;
+		margin-top: 10px;
+				border: 1px solid grey;
+
+		box-shadow: 1px 2px 4px 1px grey;
+	}
+	.class5
+	{
+		background-color: #1a4a2a;
+		
+		overflow: hidden;
+		margin-right: -10px;
+		margin-left: -1px;
+		margin-top: 10px;
+		bottom:0;
+		height: 70px;
+		width: 100%;
+		border: 1px solid grey;
+		box-shadow: 1px 2px 4px 1px grey;
+	}
+.class6 a{
+	
+	text-decoration: none;
+	color: lightgrey;
+	left:730px;
+	top:15px;
+	margin-right: 20px;
+	font-size: 27px;
+	position: relative;
+	cursor: pointer;
+		transition-duration: .89s;
+
+}
+.class6 a:hover
+{
+	color: white;
+	cursor: pointer;
+	transition-duration: .89s;
+	cursor: pointer;
+
+}
+
+.class7
+{
+
+ background-color: lightgrey;
+padding:50px;
+  background:linear-gradient(to bottom,#1a4a2a,#0e4038,#021612);
+ width: 25%;
+ position:fixed;
+transform:translate(790px,-1950px);
+ color: white;
+ transition-duration: .9s;
+}
+ .class7 a,.class8 a
+ {
+ 	padding: 6px;
+ }
+
+
+
+
+.class8
+{
+	
+ 
+ background-color: lightgrey;
+padding:50px;
+  background:linear-gradient(to bottom,#1a4a2a,#0e4038,#021612);
+ 
+ width: 25%;
+ position:fixed;
+ color: white;
+ transform: translate(800px,-1950px);
+ transition-duration: .9s;
+
+}
+
+input[type="text"],input[type="password"],input[type="email"]
+{
+  padding-top: 10px;
+  width: 200px;
+  color:white;
+border: none;
+border-bottom: 2px solid white;
+ outline: none;
+ box-shadow: none;
+ background: transparent;
+
+
+  }
+  ::placeholder
+  {
+  	color:white;
+  }
+
+.submit
+{
+  width: 180px;
+  height: 40px;
+  position: relative;
+  top:10px;
+  box-shadow:inset grey;
+  background:linear-gradient(to bottom right,#1a6d5f,black);
+  border-radius: 8px;
+  border: 2px solid white;box-shadow: 1px 1px 19px #d5d5d5;
+  color: white;
+  cursor: pointer;
+}
+.submit:hover
+{
+   width: 180px;
+  height: 40px;
+  box-shadow: 3px 3px 3px grey;
+  background:#1a6d5f
+  border-radius: 8px;
+ box-shadow:0px 0px 4px 3px #d5d5d5;
+  color: white;
+  cursor: pointer;
+}
+.class
+{
+
+ position:fixed;
+transform:translate(790px,-1940px);
+
+ 
+}
+.class input,.class a{display: none;
+transition-duration: 1s;}
+.arthidden {display: none;}
+
+
+</style>
+</head>
+<body bgcolor="lightgrey">
+	<div class="navbar"> 
+		<div class="class6">
+	<a id="homelight" onclick="f4()">Home</a>
+	<a id="Articleslight" onclick="f3()">Articles</a>
+	<a id="signinlight" onclick="f1()">Sign In</a>
+	<a id="signuplight" onclick="f2()">Sign Up</a>
+		</div>
+	</div>
+	<div id="art">
+	<div class="blockgrid">
+		<div class="item1"></div>
+		<div class="item2"></div>
+		<div class="item3"></div>
+		<div class="item4"></div>
+		<div class="item5"></div>
+		<div class="item6"></div>
+		<div class="item7"></div>
+		<div class="item8"></div>
+		<div class="item9"></div>
+		<div class="item10"></div>
+		<div class="item11"></div>
+		<div class="item12"></div>
+		<div class="item13"></div>
+		<div class="item14"></div>
+		<div class="item15"></div>
+		<div class="item16"></div>
+		<div class="item17"></div>
+		<div class="item18"></div>
+		<div class="item19"></div>
+		<div class="item20"></div>
+		<div class="item21"></div>
+		
+	</div>
+	<div class="block2grid"><div class="item1"></div>
+		<div class="item2"></div>
+		<div class="item3"></div>
+		<div class="item4"></div>
+		<div class="item5"></div>
+		<div class="item6"></div>
+		<div class="item7"></div>
+		<div class="item8"></div>
+		<div class="item9"></div>
+		<div class="item10"></div>
+		<div class="item11"></div>
+		<div class="item12"></div>
+		<div class="item13"></div>
+		<div class="item14"></div>
+		<div class="item15"></div>
+		<div class="item16"></div>
+		<div class="item17"></div>
+		<div class="item18"></div>
+		<div class="item19"></div>
+		<div class="item20"></div>
+		<div class="item21"></div></div>
+	<div class="block2grid"><div class="item1"></div>
+		<div class="item2"></div>
+		<div class="item3"></div>
+		<div class="item4"></div>
+		<div class="item5"></div>
+		<div class="item6"></div>
+		<div class="item7"></div>
+		<div class="item8"></div>
+		<div class="item9"></div>
+		<div class="item10"></div>
+		<div class="item11"></div>
+		<div class="item12"></div>
+		<div class="item13"></div>
+		<div class="item14"></div>
+		<div class="item15"></div>
+		<div class="item16"></div>
+		<div class="item17"></div>
+		<div class="item18"></div>
+		<div class="item19"></div>
+		<div class="item20"></div>
+		<div class="item21"></div></div>
+	<div class="class5"></div>
+	<div class="class" id="c7"></div>
+		
+
+	<div class="class" id="lelo">
+	<input type="text" id="username"  placeholder="Username" required=""><br><br>
+  <input type="password" id="password1"  placeholder="Password" required="" onclick="checkusername()"><br><br>
+  <a class="submit"  id="signin" value="Sign In" onclick="checkusername()"> Sign In</a>
+</div>
+<div class="class" id="lelo2">
+	<input type="text" id="username"  placeholder="Username" required=""><br><br>
+		<input type="email" id="email"  placeholder="E-mail" required="" onclick="checkusername()"><br><br>
+
+  <input type="password" id="password"  placeholder="Password" required="" onclick="checkemail(),checkusername()" ><br><br>
+    <input type="password" id="password2"  placeholder="Confirm Password" required="" onclick="checkusername(),checkemail(),checkpass()"><br><br>
+
+  <a class="submit" id="signup" value="Sign up" onclick="checkusername(),checkemail(),confirmpass(),bharoto(),checkpass()">Sign Up</a>
+</div
+</div>
+	  
+<div>
+	
+</div>
+<div id="artcopy" class="arthidden">
+<div class="block">
+		<div class="blockdiv1" style="font-size:28px;">Samsung Galaxy S9 and Galaxy S9+ are Official: Specifications, Features, Prices, and Availability</div>
+		<img src="art3.png" id="artimg1" class="blockimg1"><div class="blockp1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor
+
+		
+	</div>
+	<img src="art2.jpg" id="artimg2" class="blockimg2">
+		
+		
+		
+	</div>
+	<div class="block2"><div class="blockdiv1">Testing First Article</div>
+		<img src="art1.png" id="artimg1" class="blockimg1">
+		
+		
+		<div class="blockp2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor
+		quis nostrud exercpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor
+		quis nostrud exercpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor
+		
+	</div><img src="art4.jpg" id="artimg2" class="blockimg2"></div>
+	<div class="block2"><div class="blockdiv1">Testing First Article</div>
+		<img src="art5.jpg" id="artimg1" class="blockimg1">
+		
+		
+		<div class="blockp3">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolorquis nostrud exercpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor
+		quis nostrud exercpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor
+		quis nostrud exercpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor
+		
+		
+	</div><img src="art6.jpg" id="artimg2" class="blockimg2"></div>
+	<div class="class5"></div>
+	<div class="class" id="c7"></div>
+		
+
+	<div class="class" id="lelo">
+	<input type="text" id="username1"  placeholder="Username" required=""><br><br>
+  <input type="password" id="password1"  placeholder="Password" required=""><br><br>
+  <a class="submit"  id="signin" value="Sign In"> Sign In</a>
+</div>
+<div class="class" id="lelo2">
+	<input type="text" id="username"  placeholder="Username" required=""><br><br>
+		<input type="email" id="email"  placeholder="E-mail" required=""><br><br>
+
+  <input type="password" id="password"  placeholder="Password" required=""><br><br>
+    <input type="password" id="password2"  placeholder="Confirm Password" required="" ><br><br>
+
+  <a class="submit" id="signup" value="Sign up" onclick="create() checkemail()">Sign Up</a>
+</div>
+</div>
+	  
+<div>
+	
+</div>
+</div>
+
+	<script>
+		var c=0;
+		var d=0;
+		var art0=0;
+					var s=document.getElementById("lelo").innerHTML;
+					var t=document.getElementById("lelo2").innerHTML;
+					var art=document.getElementById("art").innerHTML;
+					var art2=document.getElementById("artcopy").innerHTML;
+					
+
+
+		function f1()
+		{
+		if(c%2==0)
+		{
+			document.getElementById("c7").className="class7";
+		document.getElementById("c7").innerHTML=s;
+		document.getElementById("lelo").innerHTML="";
+		document.getElementById("signinlight").style="color:white;";
+		document.getElementById("signuplight").style="color:lightgrey;";
+		document.getElementById("homelight").style="color:lightgrey;";
+		document.getElementById("Articleslight").style="color:lightgrey;";
+}
+else
+{
+	document.getElementById( "c7").className="class";
+				document.getElementById("signinlight").style="color:lightgrey;";
+
+}
+c++;
+}
+function f2()
+		{
+		if(d%2==0)
+		{
+			document.getElementById("c7").className="class8";
+		document.getElementById("c7").innerHTML=t;
+		document.getElementById("lelo2").innerHTML="";
+		document.getElementById("signuplight").style="color:white;";
+		document.getElementById("homelight").style="color:lightgrey;";
+		document.getElementById("signinlight").style="color:lightgrey;";
+		document.getElementById("Articleslight").style="color:lightgrey;";
+
+}
+else
+{
+	document.getElementById("c7").className="class";
+			document.getElementById("signuplight").style="color:lightgrey;";
+
+}
+d++;
+}
+
+var title = [];
+var i=0;
+	
+	var eml=document.getElementById("email").value;
+
+function checkusername()
+{
+	var u=document.getElementById("username").value;
+	var leth=u.length;
+	var di=0;
+	if(leth<=6 || leth>=32)
+	{
+	 	document.getElementById("username").style="color:red;background-color:pink;";
+	 	alert(" Username Must be a minimum of 6 characters");
+	}
+	else
+	{
+
+		document.getElementById("username").style="color:white;background-color:;";
+		for ( di = leth-1; di >= 0; di--) {	
+		var check=u.charCodeAt(di);		
+		if((check>=65 && check<=90) || (check>=97 && check<=122) || (check>=48 && check<=59) || (check==95 || check==45 || check==46))
+		{
+			document.getElementById("username").style="border-bottom:2px solid green;";
+		}
+		else
+		{
+			document.getElementById("username").style="color:red;background-color:pink;";
+			alert(" Username  Only letters, numbers, '-', '.', and '_' may be used.");
+			break;
+	}		
+}
+
+
+	}
+	
+}
+
+function checkemail()
+{
+var u=document.getElementById("email").value;
+	var leth=u.length;
+	var di=0;
+	var flag=0;
+	if(leth<=6 || leth>=32)
+	{
+	 	document.getElementById("email").style="color:red;background-color:pink;";
+	 	alert(" Email Must be a minimum of 6 characters");
+	}
+	else
+	{
+
+		document.getElementById("email").style="color:white;background-color:;";
+		for ( di = leth-1; di >= 0; di--) {	
+		var check=u.charCodeAt(di);		
+		if((check>=65 && check<=90) || (check>=97 && check<=122) || (check>=48 && check<=59) || (check==95 || check==45 || check==46 || check==64))
+		{
+			if(check==64)
+			{
+				flag=1;
+			}
+
+			document.getElementById("email").style="border-bottom:2px solid green;";
+		}
+		else
+		{	
+			document.getElementById("email").style="color:red;background-color:pink;";
+			alert(" Email Only letters, numbers, '-', '.', and '_' may be used.");
+			break;
+	}		
+}
+
+}
+if (flag==0) {
+	document.getElementById("email").style="color:red;background-color:pink;";
+	alert("Email Must Contain '@'");
+
+}
+else{
+				document.getElementById("email").style="border-bottom:2px solid green;";
+						
+
+
+}
+  
+  /* title[i] = {
+        name: u,
+        pass: pas
+    };*/
+
+}
+
+function confirmpass(){
+
+var pas=document.getElementById("password").value;
+var pas2=document.getElementById("password2").value;
+if(pas2!=pas || pas=='')
+{
+	document.getElementById("password").style="color:red;background-color:pink;";
+	document.getElementById("password2").style="color:red;background-color:pink;";
+	alert("Password Are Not Equal");
+}
+else
+{
+document.getElementById("password").style="border-bottom:2px solid green;";
+document.getElementById("password2").style="border-bottom:2px solid green;";
+
+}
+}
+
+
+
+function bharoto()
+{
+	var un=document.getElementById("username").value;
+	var paswd1=document.getElementById("password").value;
+	var paswd2=document.getElementById("password2").value;
+	var eml=document.getElementById("email").value;
+	if(un=="")
+	{
+		alert("Name Is Empty");
+	}
+	else if(eml=="")
+	{
+		alert("Enter Email");
+	}
+	else if(paswd1=="")
+	{
+		alert("Enter Password");
+	}
+	else if(paswd2=="")
+	{
+		alert("Enter Password Again");
+	}
+	else{
+
+	}
+}
+																																																																							
+
+function f3()
+{
+	document.getElementById("art").innerHTML=art2;
+	document.getElementById("homelight").style="color:lightgrey;";
+	document.getElementById("Articleslight").style="color:white;";
+	document.getElementById("signuplight").style="color:lightgrey;";
+}
+function f4()
+{
+	document.getElementById("art").innerHTML=art;
+	document.getElementById("signuplight").style="color:lightgrey;";
+	document.getElementById("Articleslight").style="color:lightgrey;";
+	document.getElementById("homelight").style="color:white;";
+}
+
+
+function checkpass() 
+{
+	var usn=document.getElementById("username").value;
+	var paswd=document.getElementById("password").value;
+	var legth=paswd.length;
+	if(legth>=8 && legth<=128)
+	{
+		if(paswd!=usn)
+		{
+			if(paswd.includes(usn))
+			{
+				alert("Password Cannot Contain Username");
+			}
+			else
+			{
+				document.getElementById("password").style="border-bottom:2px solid green;";
+			}
+
+		}
+		else
+		{
+			alert("Password Cannot Be Username");
+		}
+
+	}
+	else if(legth==0)
+	{}
+	else
+	{
+		alert("Password Should Be Greater Than 8 Characters");
+	}
+
+}
+	</script>
+</body>
+</html>
